@@ -20,3 +20,4 @@ $ DEVELOPMENT=1 python manage.py runserver
 Then visit `http://localhost:8000` to view the app.
 
 # drf-jwt-login
+# drf-jwt-react
