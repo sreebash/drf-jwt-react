@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import {Link, NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const data = 'https://jsonplaceholder.typicode.com/posts'
 
 
 class BlogListing extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             data: []
         }
@@ -52,7 +52,7 @@ class BlogListing extends Component {
 
                             <div className="row">
                                 <div className="col-lg-6">
-                                    <Link to="/posts/">
+                                    <Link to="/post-detail">
                                         <img className="img-fluid rounded" src="http://placehold.it/900x300" alt=""/>
                                     </Link>
 
